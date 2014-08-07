@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   get "signout" => "sessions#destroy", as: :signout
   get "about" => "about#about"
 
-
+  get "/task_lists/:id/completed" => "task_lists#show"
   resources :task_lists do
     resources :tasks
   end
