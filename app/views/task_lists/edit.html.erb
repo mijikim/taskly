@@ -1,0 +1,13 @@
+<h1>Edit a task list</h1>
+<%= form_for @task_lists, html: { class: "signin-form" } do |f| %>
+  <% if @task_lists.errors.any? %>
+    <p class="error">Your task list could not be edited</p>
+  <% end %>
+  <div>
+    <%= f.label :name %>
+    <%= f.text_field :name, autofocus: true %>
+  </div>
+  <div>
+    <%= f.submit "Edit Task List" %>
+  </div>
+<% end %>

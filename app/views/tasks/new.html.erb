@@ -1,0 +1,17 @@
+<h1>Add a task</h1>
+<%= form_for [@task_list, @task], html: { class: "signin-form" } do |f| %>
+  <% if @task.errors.any? %>
+    <p class="error">Your task could not be created</p>
+  <% end %>
+  <div>
+    <%= f.label "Description" %>
+    <%= f.text_field :task_name, autofocus: true %>
+  </div>
+  <div>
+    <%= f.label :due_date %>
+    <%= f.date_select :due_date, autfocus: true %>
+  </div>
+  <div>
+    <%= f.submit "Create Task List" %>
+  </div>
+<% end %>

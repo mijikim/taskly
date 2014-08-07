@@ -84,3 +84,40 @@ main {
     font-size: 110%;
   }
 }
+
+#flash_notice {
+  border: 1px solid #4d702e;
+  background: #aac294;
+  padding: 10px
+
+}
+
+.top-nav {
+  float: left;
+  list-style: none;
+  padding: 16px;
+  width: 960px
+}
+
+.top-nav > li {
+  float: left;
+
+}
+
+.top-nav > li > a {
+  display: block;
+  padding: 33px 10px 0 10px;
+}
+
+.field_with_errors {
+  display: inline;
+}
+
+.field_with_errors input {
+  border: 1px solid red
+}
+
+.error {
+  display: inline;
+  color: red
+}
